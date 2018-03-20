@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 
-function reducer(state = { value: 1 }, action) {
+function reducer(state = { value: 100 }, action) {
     // return { value: 10 };
     if (action.type === 'INCREASE') return { value: state.value + 1 };
     if (action.type === 'DESCREASE') return { value: state.value - 1 };
